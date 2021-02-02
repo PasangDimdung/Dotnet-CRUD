@@ -15,3 +15,12 @@ E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Employee
 E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.pdb
 E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.genruntimeconfig.cache
 E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csprojAssemblyReference.cache
+E:\Dotnet\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.Views.dll
+E:\Dotnet\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.Views.pdb
+E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.TagHelpers.input.cache
+E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.TagHelpers.output.cache
+E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorCoreGenerate.cache
+E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\details.cshtml.g.cs
+E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorTargetAssemblyInfo.cs
+E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.Views.pdb
+E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csproj.CopyComplete
