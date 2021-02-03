@@ -11,8 +11,8 @@
         <div class="col">
             <div class="card shadow-sm">
                 <div class="card-body">
-                    <p class="card-text">@employee.Name</p>
-                    <img class="card-img-top imageThumbnail" src="~/images/wallpaper.jpg" />
+                    <h4 class="card-text">@employee.Name</h4>
+                    <img class="card-img-top imageThumbnail" src="~/images/wallpaper.jpg" asp-append-version="true" />
                     <div class="d-flex justify-content-between align-items-center mt-3">
                         <div class="btn-group">
                             <a asp-controller="home" asp-action="details" asp-route-id="@employee.Id" type="button" class="btn btn-sm btn-outline-secondary">View</a>

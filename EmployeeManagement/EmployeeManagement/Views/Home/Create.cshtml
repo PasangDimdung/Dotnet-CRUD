@@ -1,0 +1,33 @@
+﻿@model Employee
+
+@{
+    ViewBag.Title = "Create Employee";
+
+}
+
+<form class="needs-validation" novalidate >
+    <div class="row g-3">
+        <div class="col-12">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter name" />
+        </div>
+
+        <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email address">
+        </div>
+
+        <div class="col-12">
+            <label for="department" class="form-label">Department</label>
+            <select class="form-select" id="department" required>
+                <option value="">Choose Department...</option>
+                <option>United States</option>
+            </select>
+        </div>
+
+        <div class="d-grid d-md-block">
+            <button class="btn btn-primary" type="button">Create</button>
+        </div>
+
+    </div>
+</form>
