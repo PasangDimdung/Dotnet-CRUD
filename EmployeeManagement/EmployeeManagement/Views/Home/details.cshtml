@@ -5,13 +5,21 @@
 }
 
 <h3> @Model.PageTitle </h3>
-
-<div>
-    Name: @Model.Employee.Name
-</div>
-<div>
-    Email: @Model.Employee.Email
-</div>
-<div>
-    Department: @Model.Employee.Department
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+         <div class="col">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <img class="card-img-top imageThumbnail" src="~/images/wallpaper.jpg" />
+                    <p class="card-text mt-3">Name: @Model.Employee.Name</p>
+                    <p class="card-text">Email: @Model.Employee.Email</p>
+                    <p class="card-text">Department: @Model.Employee.Department</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Back</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>

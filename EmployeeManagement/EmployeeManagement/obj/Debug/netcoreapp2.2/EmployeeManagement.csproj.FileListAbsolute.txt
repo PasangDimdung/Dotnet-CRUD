@@ -24,3 +24,8 @@ E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Vi
 E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorTargetAssemblyInfo.cs
 E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.Views.pdb
 E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csproj.CopyComplete
+E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+E:\Dotnet\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+E:\Dotnet\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\libman.json
