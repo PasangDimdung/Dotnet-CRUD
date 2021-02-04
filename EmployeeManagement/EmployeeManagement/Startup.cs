@@ -33,7 +33,7 @@ namespace EmployeeManagement
             }
 
             app.UseStaticFiles();
-            app.UseMvc();
+            app.UseMvcWithDefaultRoute();
         }
     }
 }
