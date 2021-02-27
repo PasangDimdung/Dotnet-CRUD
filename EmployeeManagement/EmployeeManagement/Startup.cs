@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -28,6 +29,9 @@ namespace EmployeeManagement
                and passing them as a parameter to GetConnectionString Method. */
             services.AddDbContextPool<AppDbContext>(options => options.UseSqlServer( _config.GetConnectionString("EmployeeDBConnection") ));
 
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                    .AddEntityFrameworkStores<AppDbContext>();  //We use EntityFrameworkStore to retrieve user and role information from database
+
             services.AddMvc();
 
             /* If someone requests the IEmployeeRepository then it creates an instance of SQLEmployeeRepository 
@@ -42,8 +46,8 @@ namespace EmployeeManagement
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseStaticFiles();
+            app.UseAuthentication();
             app.UseMvcWithDefaultRoute();
         }
     }
