@@ -79,13 +79,40 @@ namespace EmployeeManagement.Controllers
                 return RedirectToAction("ListUsers");
             }
 
-            //we are looping through errors because.. for example if you try to edit email but it's already taken, Then email taken message is shown.
+            //we are looping through errors because.. lets say if you try to edit an email but it's already taken then email taken message is shown.
             foreach (var error in result.Errors)
             {
                 ModelState.AddModelError("", error.Description); 
             }
 
             return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteUser(string id)
+        {
+            var user = await userManager.FindByIdAsync(id);
+
+            if (user == null)
+            {
+                return NoContent();
+            }
+            else
+            {
+                var result = await userManager.DeleteAsync(user);
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("ListUsers");
+                }
+
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+
+                return View("ListUsers");
+            }
         }
 
         [HttpGet]
