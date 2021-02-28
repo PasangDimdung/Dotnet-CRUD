@@ -40,6 +40,10 @@ namespace EmployeeManagement.Controllers
 
                 if (result.Succeeded)
                 {
+                    if(_signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                    {
+                        return RedirectToAction("ListUsers", "Administration");
+                    }
                     //(isPersistent = false) uses session cookie - cleared when browser is closed
                    await _signInManager.SignInAsync(user, isPersistent: false);
                     return RedirectToAction("index", "home");
@@ -108,6 +112,13 @@ namespace EmployeeManagement.Controllers
             {
                 return Json($"Email {email} is already in use");
             }
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
 
     }

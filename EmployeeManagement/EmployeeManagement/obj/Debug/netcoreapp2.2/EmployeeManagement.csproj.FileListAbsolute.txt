@@ -68,3 +68,7 @@ C:\_pasang\Projects\Donet-CRUD\EmployeeManagement\EmployeeManagement\obj\Debug\n
 C:\_pasang\Projects\Donet-CRUD\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\CreateRole.cshtml.g.cs
 C:\_pasang\Projects\Donet-CRUD\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\ListRoles.cshtml.g.cs
 C:\_pasang\Projects\Donet-CRUD\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditRoles.cshtml.g.cs
+C:\_pasang\Projects\Donet-CRUD\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditUsersInRole.cshtml.g.cs
+C:\_pasang\Projects\Donet-CRUD\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\AccessDenied.cshtml.g.cs
+C:\_pasang\Projects\Donet-CRUD\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\ListUsers.cshtml.g.cs
+C:\_pasang\Projects\Donet-CRUD\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditUser.cshtml.g.cs
