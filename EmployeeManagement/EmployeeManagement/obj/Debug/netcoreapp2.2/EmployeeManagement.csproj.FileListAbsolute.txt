@@ -72,3 +72,5 @@ C:\_pasang\Projects\Donet-CRUD\EmployeeManagement\EmployeeManagement\obj\Debug\n
 C:\_pasang\Projects\Donet-CRUD\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\AccessDenied.cshtml.g.cs
 C:\_pasang\Projects\Donet-CRUD\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\ListUsers.cshtml.g.cs
 C:\_pasang\Projects\Donet-CRUD\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditUser.cshtml.g.cs
+C:\_pasang\Projects\Donet-CRUD\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\ManageUserRoles.cshtml.g.cs
+C:\_pasang\Projects\Donet-CRUD\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\ManageUserClaims.cshtml.g.cs
