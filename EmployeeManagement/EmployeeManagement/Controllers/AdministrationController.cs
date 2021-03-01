@@ -25,38 +25,6 @@ namespace EmployeeManagement.Controllers
             this.userManager = userManager;
         }
 
-        //[HttpGet]
-        //public async Task<IActionResult> ManageUserClaims(string userId)
-        //{
-        //    var user = await userManager.FindByIdAsync(userId);
-
-        //    if (user == null)
-        //    {
-        //        return NoContent();
-        //    }
-
-        //    //all claims of that user
-        //    var existingUserClaims = await userManager.GetClaimsAsync(user);
-
-        //    var model = new UserClaimsViewModel { UserId = userId };
-
-        //    foreach (Claim claim in ClaimsStore.AllClaims)
-        //    {
-        //        //populating properties of UserClaim model from - the values of claim type in ClaimsStore
-        //        UserClaim userClaim = new UserClaim { ClaimType = claim.Type };
-
-        //        //if user has claim set isSeleted prop to true
-        //        if(existingUserClaims.Any(c=>c.Type == claim.Type))
-        //        {
-        //            userClaim.isSelected = true;
-        //        }
-
-        //        model.Claims.Add(userClaim);
-        //    }
-
-        //    return View(model);
-        //}
-
         [HttpGet]
         public async Task<IActionResult> ManageUserClaims(string userId)
         {
@@ -132,36 +100,6 @@ namespace EmployeeManagement.Controllers
             return RedirectToAction("EditUser", new { Id = model.UserId });
 
         }
-
-        //[HttpPost]
-        //public async Task<IActionResult> ManageUserClaims(UserClaimsViewModel model)
-        //{
-        //    var user = await userManager.FindByIdAsync(model.UserId);
-
-        //    if (user == null)
-        //    {
-        //        return NoContent();
-        //    }
-
-        //    //all claims of that user
-        //    var claims = await userManager.GetClaimsAsync(user);
-        //    var result = await userManager.RemoveClaimsAsync(user, claims);
-
-        //    if (!result.Succeeded)
-        //    {
-        //        ModelState.AddModelError("", "Cannot remove user exisiting claims ");
-        //        return View(model);
-        //    }
-
-        //    result = await userManager.AddClaimsAsync(user, model.Claims.Where(c => c.isSelected).Select(c => new Claim(c.ClaimType, c.ClaimType)));
-
-        //    if (!result.Succeeded)
-        //    {
-        //        ModelState.AddModelError("", "Cannot add selected claims to the user");
-        //        return View(model);
-        //    }
-        //    return RedirectToAction("EditUser", new { Id = model.UserId });
-        //}
 
         [HttpGet]
         public IActionResult ListUsers()
@@ -291,6 +229,7 @@ namespace EmployeeManagement.Controllers
         }
 
         [HttpGet]
+        [Authorize(Policy = "EditRolePolicy")]
         public async Task<IActionResult> EditRoles(string id)
         {
             var role = await roleManager.FindByIdAsync(id);
@@ -314,6 +253,7 @@ namespace EmployeeManagement.Controllers
         }
 
         [HttpPost]
+        [Authorize(Policy = "EditRolePolicy")]
         public async Task<IActionResult> EditRoles(EditRoleViewModel model)
         {
             var role = await roleManager.FindByIdAsync(model.Id);

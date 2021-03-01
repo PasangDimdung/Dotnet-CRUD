@@ -37,6 +37,14 @@ namespace EmployeeManagement
             /* If someone requests the IEmployeeRepository then it creates an instance of SQLEmployeeRepository 
             and injects that instance */
             services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
+
+
+            //Claims
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("EditRolePolicy", policy => policy.RequireClaim("Edit Role"));
+                options.AddPolicy("DeleteRolePolicy", policy => policy.RequireClaim("Delete Role"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
